@@ -1,18 +1,18 @@
 package unlar.edu.ar.parcialprog3.models;
 
 public class Monopatin  extends Vehiculo {
-    private boolean amortiguacion  ;
+    private boolean tieneAmortiguacion;     
 
     public Monopatin() {
         super();
     }
 
-    public boolean isAmortiguacion() {
-        return amortiguacion;
+    public boolean isTieneAmortiguacion() {
+        return tieneAmortiguacion;
     }
 
-    public void setAmortiguacion(boolean amortiguacion) {
-        this.amortiguacion = amortiguacion;
+    public void setTieneAmortiguacion(boolean tieneAmortiguacion) {
+        this.tieneAmortiguacion = tieneAmortiguacion;
     }
 
 }

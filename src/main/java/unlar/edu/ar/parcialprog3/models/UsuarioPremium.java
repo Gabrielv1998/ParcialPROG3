@@ -3,8 +3,9 @@ package unlar.edu.ar.parcialprog3.models;
 public class UsuarioPremium extends Usuario {
     private String metodoPago;
 
-    public UsuarioPremium() {
-        super();
+    public UsuarioPremium(String nombre, String metodoPago) {
+        super(nombre, null);
+        this.metodoPago = metodoPago;
     }
 
     public String getMetodoPago() {
