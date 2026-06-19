@@ -1,13 +1,13 @@
 package unlar.edu.ar.parcialprog3.repository;
 
-
-import unlar.edu.ar.parcialprog3.domain.Usuario;
+import unlar.edu.ar.parcialprog3.domain.Alquiler;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import java.util.Optional;
+import java.util.List;
 
 @Repository
-public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
-    Optional<Usuario> findByCorreo(String correo);
-    java.util.List<Usuario> findByTipoUsuario(Usuario.TipoUsuario tipo);
+public interface AlquilerRepository extends JpaRepository<Alquiler, Long> {
+    List<Alquiler> findByUsuarioId(Long usuarioId);
+    List<Alquiler> findByVehiculoId(Long vehiculoId);
+    List<Alquiler> findByEstado(Alquiler.EstadoAlquiler estado);
 }
